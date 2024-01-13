@@ -82,7 +82,7 @@ function emptyTable() {
 /*
 ? con esta funcion obtenemos los valores almacenados. cosas a tener en cuenta: hay que recorrer el localStorage, para ello lo primero es obtener la clave de cada posicion.
 ! OJO! gran fallo que me lleva a confusión, estamos trabajando con un objeto por lo que cambia la nomenclatura a la hora de acceder a sus elementos. en el caso de los objetos (asociacion clave-valor). la expresion para acceder a una clave (por ejemplo el identificador unico empleado a partir de Date()) es localStorage.key(i). de esta forma estamos accediendo a todos los elementos key y, dentro de estos recorrer su posicion. Hay que recordar que en un objeto, la posicion se establece por el nombre de la clave y no por el indice.
-? Aunque a la hora de almacenarlo se convirtio en string, al acceder a el, se trata de un objeto (creo que es porque lo almacené en una variable tipo objeto por lo que el lenguaje hizo la transformacion). por último simplemente se recorre cada clave y se agrega al html
+?  a la hora de almacenarlo se convirtio en cadena de texto JSON, al acceder a el, es recomendable reconvertirlo al formato inicial . por último simplemente se recorre cada clave y se agrega al html
 */
 
 function loadSaveData() {
