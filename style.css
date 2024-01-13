@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f2f6fc;
+  margin: 0;
+}
+
+/*[HEADER]*/
+.logo {
+  width: 20rem;
+  height: 20rem;
+}
+h1 {
+  color: #5032ad;
+}
+.title {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cbdbf2;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/*[FORMULARIO]*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 13rem;
+  margin-bottom: 20rem;
+  gap: 12rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.formulario {
+  background-color: #f4f6f7;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.3rem;
+  border: 0.06rem solid #666666;
+  box-shadow: 0px 2px 2px 2px rgba(102, 102, 102, 0.2);
+}
+
+.label-title {
+  font-size: 1.75rem;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 2rem;
+  background-color: #e3e8ea;
+  box-sizing: border-box;
+}
+
+.text,
+.textSurname,
+.text-telefono,
+.textDni,
+.textNacimiento,
+.textFechaHora,
+.textObservaciones {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.textObservaciones,
+.textFechaHora {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.cont-labels-paciente {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #f4f6f7;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+.patient {
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.35rem;
+}
+
+.cont-fecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cont-fechacita {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fecha-hora {
+  margin-top: 3rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.35rem;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+}
+
+.observaciones {
+  width: 30rem;
+  height: 8rem;
+  font-size: 1.35rem;
+  margin-top: 3rem;
+  text-align: start;
+  display: inline-block;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%);
+}
+.cont-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+button {
+  width: 8rem;
+  height: 3rem;
+  background-color: #e3e8ea;
+  font-size: 1.55rem;
+  border-radius: 0.3rem;
+}
+
+.borrar,
+.modificar {
+  width: 6rem;
+  height: 3rem;
+  background-color: #e3e8ea;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+}
+
+/*[TABLA]*/
+table {
+  box-shadow: 0px 2px 2px 2px rgba(102, 102, 102, 0.2);
+}
+
+table,
+thead,
+th,
+td {
+  border: 0.06rem solid black;
+}
+
+th {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 0.5rem;
+  text-decoration: underline;
+  background-color: #e3e8ea;
+}
+td {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+.campoVacioCelda {
+  font-style: italic;
+  color: #cbdbf2;
+  background-color: white;
+}
+
+/*[FOOTER]*/
+.footer {
+  padding-bottom: 5rem;
+  border-top: 0.06rem solid #eee;
+  background-color: #cbdbf2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.4rem;
+}
+
+.footer-title {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 10rem;
+  height: 10rem;
+  transform: translateY(20%);
+}
+
+.footer-mainTitle {
+  display: inline-block;
+}
+
+.footer-ab {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30%;
+  justify-content: center;
+}
+.subheading {
+  font-size: 2rem;
+  color: #5032ad;
+}
+
+.text-address,
+.footer-link {
+  font-size: 1.3rem;
+  color: #415bb2;
+}
+.contain-conocenos {
+  display: block;
+}
+.contain-contact {
+  display: inline-block;
+  margin-right: 5rem;
+}

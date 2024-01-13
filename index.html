@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedacDent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="title">
+        <img src="logo.png" class="logo">
+        <h1>MedacDent</h1>
+    </header>
+
+    <!-- MAIN SECTION(FORMULARIO && TABLA)-->
+
+    <section class="container">
+        <!--FORMULARIO-->
+        <form class="formulario">
+
+            <span class="label-title">Introduzca los datos del paciente</span>
+            <div id="paciente" class="cont-labels-paciente">
+
+                <!--![INPUTS FORMULARIO PACIENTE]-->
+                <input id="nombre" class="nombre patient tabla" type="text" pattern="[a-zA-Z]" placeholder="Nombre"
+                    pattern="[a-zA-Z]+" required autofocus>
+                <span class="text hidden">Introduce un nombre real</span><br>
+
+                <input id="apellido" class="apellidos patient tabla" type="text" placeholder="Apellidos"
+                    pattern="[a-zA-Z]+" required>
+                <span class="textSurname hidden">Introduce un apellido real</span><br>
+
+                <input id="telefono" class="telefono patient tabla" type="tel" placeholder="Teléfono" pattern="[0-9]{9}"
+                    title="Introduce 9 dígitos" required>
+                <span class="text-telefono hidden">Introduce un teléfono válido</span><br>
+
+
+                <input id="dni" class="dni patient tabla" type="text" placeholder="DNI" pattern="[0-9]{8}[a-zA-Z]{1}"
+                    minlength="9" maxlength="9" size="9" title="Introduce 8 dígitos y una letra" required>
+                <span class="textDni hidden">Introduce un dni válido, incluye letra</span><br>
+
+                <input id="fechaNacimiento" class="fechaNacimiento patient tabla" type="date"
+                    placeholder="fecha de nacimiento" pattern="[0-9]" title="Introduce la fecha de nacimiento" required>
+                <span class="textNacimiento hidden">Introduce una fecha válida</span><br>
+
+            </div>
+
+            <!--![INPUTS FORMULARIO FECHA CITA]-->
+
+            <div class="cont-fecha">
+                <label for="fecha" class="label-title fecha">Introduzca la fecha de la cita</label>
+                <div class="cont-fechacita"> <input id="fecha" class="fecha-hora tabla" type="datetime-local" required>
+                    <span class="textFechaHora hidden">Introduce una fecha y hora válidas</span>
+                </div>
+            </div>
+
+
+            <!--![INPUTS FORMULARIO OBSERVACIONES]-->
+
+            <label for="title" class="label-title">Indique lo que considere</label>
+            <input id="title" class="observaciones tabla" type="text" minlength="15">
+            <span class="textObservaciones hidden">Introduce al menos 15 caracteres</span>
+
+
+
+
+            <div class=cont-btn>
+                <button type="button" onclick="PressSubmit(), addData()" class="btn btn-submit">Enviar</button>
+                <button type="button" class="btn btn-reset" id="erase">Borrar</button>
+            </div>
+
+
+        </form>
+
+
+
+
+        <!--TABLA-->
+        <div class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>DNI</th>
+                        <th>Teléfono</th>
+                        <th>Fecha nacimiento</th>
+                        <th>Fecha cita</th>
+                        <th>Observaciones</th>
+                        <th>Orden</th>
+                        <th>Botón</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr class=" campoVacio " contenteditable="true">
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                        <td class="campoVacioCelda">'campo vacío'</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!--[FOOTER]-->
+    <footer class="footer">
+        <div class="footer-title">
+            <img src="logo.png" class="footer-logo logo">
+            <h1 class="footer-mainTitle">Datos de contacto</h1>
+        </div>
+        <div class=" footer-ab">
+            <div>
+                <div class="contain-conocenos">
+                    <p class="footer-heading subheading">Ven a conocernos </p>
+                    <address class="address">
+                        <p class="text-address ">
+                            A339, km 24,5 - 14800. Priego de Córdoba (Córdoba)
+                        </p>
+                    </address>
+                </div>
+            </div>
+            <div>
+                <div class="contain-contact">
+                    <p class=" footer-heading subheading contactanos">Contáctanos</p>
+                    <p><a class="footer-link" href="tel:658652695">658652695</a><br>
+                        <a class="footer-link" href="mailto: hello@EcoOleum.com">hello@ecooleum.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
